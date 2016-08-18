@@ -37,12 +37,12 @@
     "addressPrefix": "10.0.0.0/24",
     "subnetName": "sub-vnet",
     "subnetPrefix": "10.0.0.0/24",
-    "publicIPAddressName": "btsrvdb-ipp",
+    "publicIPAddressName": "btsrvapp-ipp", 
     "publicIPAddressType": "Dynamic",
     "virtualNetworkName": "vNet-BT",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-    "nicName": "btsrvdb-eth0"
+    "nicName": "btsrvapp-eth0"
   },
   "resources": [
     {
